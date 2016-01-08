@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>English</title>
+
+<!-- Stylesheets -->
+<link rel="stylesheet" href="css/photon.css" />
+<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css" />
+<!-- Javascript -->
+<script src="js/menu.js" charset="utf-8"></script>
+<style>
+ul.lines {
+  list-style-type: none;
+  font-family: 'consolas';
+  margin: 0;
+  padding: 8px;
+}
+</style>
+</head>
+<body>
+<div class="window" id="photon-window">
+  <header class="toolbar toolbar-header">
+    <h1 class="title">Space Radar</h1>
+
+    <div class="toolbar-actions">
+      <button class="btn btn-default btn-large" onclick="openFile()">
+          <i class="fa fa-folder-open"></i> Open
+      </button>
+
+      <div class="btn-group pull-right">
+        <button class="btn btn-default btn-large" onclick="sort()">
+          <i class="fa fa-refresh"></i> Reload
+        </button>
+
+        <button class="btn btn-default btn-large" onclick="sort()">
+          <i class="fa fa-sort-alpha-asc"></i> Sort
+        </button>
+
+        <button class="btn btn-default btn-large"  onclick="shuffle()">
+          <i class="fa fa-random fa-rotate-270"></i> Shuffle
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Your app's content goes inside .window-content -->
+  <div class="window-content">
+
+
+  </div> <!-- end window-content -->
+  <footer class="toolbar toolbar-footer">
+
+    <div class="toolbar-actions">
+      <span id="bottom_status" style="font-size:11px; padding-left: 8px"></span>
+    </div>
+  </footer>
+</div> <!-- end window -->
+
+<script src="js/actions.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "name": "english-tool",
+  "version": "1.0.0",
+  "description": "A simple template app for Proton",
+  "main": "main.js",
+  "author": "Jiang Hongfei",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "font-awesome": "^4.5.0"
+  }
+}
