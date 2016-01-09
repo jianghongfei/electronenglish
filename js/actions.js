@@ -1,6 +1,6 @@
 'use strict';
 
-const _lines = [];
+let _lines = [];
 let _path = '';
 
 switch (require('process').platform) {
@@ -38,6 +38,8 @@ function reload() {
   });
 
   let index = 0;
+  _lines = [];
+  
   lineReader.on('line', (line) => {
     if (line) {
       _lines.push({ index: index++, text: line });
